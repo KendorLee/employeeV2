@@ -1,0 +1,31 @@
+<mvc:View controllerName="kendorcloud.employee2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel id="Panel1">
+                <Table id="Table1" class="sapUiResponsiveMargin" width="auto"
+                items="{/Employees}">
+                    <columns>
+                        <Column id="Column1">
+                            <Text id="Text1" text="Product ID" />
+                        </Column>
+                    
+                    </columns>
+
+                    <items>
+                        <ColumnListItem id="ColumnListItem1">
+                            <cells>
+                                <ObjectNumber id="ObjectNumber1" number="{EmployeeID}"/>
+                            </cells>
+                        
+                        </ColumnListItem>
+                    
+                    </items>
+                
+                </Table>
+            </Panel>
+        </content>
+
+    </Page>
+</mvc:View>
